@@ -4,21 +4,21 @@ import { Card } from "react-bootstrap";
 const data = [
   {
     id: 1,
-    link: "https://w7.pngwing.com/pngs/1003/487/png-transparent-github-pages-random-icons-white-logo-monochrome-thumbnail.png",
+    link: "https://github.com/atomicno28/corporate_tools/blob/main/corporate/src/media/Superpower1.JPG?raw=true",
     Topic: "Super Power 1",
     Content:
       "Lorem ipsum praesent massa at ligula reet ist icuqilla. Vivamius est mist aliquit elit milt ac nisl.",
   },
   {
     id: 2,
-    link: "https://w7.pngwing.com/pngs/1003/487/png-transparent-github-pages-random-icons-white-logo-monochrome-thumbnail.png",
+    link: "https://github.com/atomicno28/corporate_tools/blob/main/corporate/src/media/Superpower2.JPG?raw=true",
     Topic: "Super Power 2",
     Content:
       "Lorem ipsum praesent massa at ligula reet ist icuqilla. Vivamius est mist aliquit elit milt ac nisl.",
   },
   {
     id: 3,
-    link: "https://w7.pngwing.com/pngs/1003/487/png-transparent-github-pages-random-icons-white-logo-monochrome-thumbnail.png",
+    link: "https://github.com/atomicno28/corporate_tools/blob/main/corporate/src/media/Superpower3.JPG?raw=true",
     Topic: "Super Power 3",
     Content:
       "Lorem ipsum praesent massa at ligula reet ist icuqilla. Vivamius est mist aliquit elit milt ac nisl.",
@@ -30,23 +30,27 @@ const renderedData = data.map((item) => (
     key={item.id}
     style={{
       width: "23rem",
-      height: "23rem",
+      height: "25rem",
       marginRight: "25px",
-      background: `linear-gradient(to right, #191970,#000080)`,
+      background: `linear-gradient(to right, #010048,#02006c)`,
       borderRadius: "20px",
     }}
   >
     <Card.Img
       variant="top"
       src={item.link}
-      height="170px"
+      height="180px"
       style={{ padding: "30px" }}
     />
     <Card.Body>
-      <Card.Title style={{ color: "white", fontSize: "1.7rem" }}>
+      <Card.Title
+        style={{ color: "white", fontSize: "1.7rem", fontFamily: "Georgia" }}
+      >
         <b>{item.Topic}</b>
       </Card.Title>
-      <Card.Text style={{ color: "white", fontSize: "1.4rem" }}>
+      <Card.Text
+        style={{ color: "white", fontSize: "1.4rem", fontFamily: "Georgia" }}
+      >
         {item.Content}
       </Card.Text>
     </Card.Body>
